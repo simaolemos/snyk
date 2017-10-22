@@ -1,8 +1,13 @@
+<p align="center">
 ![Snyk logo](https://snyk.io/style/asset/logo/snyk-print.svg)
-
-***
-
+</p>
+<p align="center">
 [![Known Vulnerabilities](https://snyk.io/test/npm/snyk/badge.svg)](https://snyk.io/test/npm/snyk)
+
+[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
+</p>
+
+## About Snyk
 
 Snyk helps you find, fix and monitor for known vulnerabilities in Node.js npm, Ruby and Java dependencies, both on an ad hoc basis and as part of your CI (Build) system.
 
@@ -16,7 +21,7 @@ Snyk helps you find, fix and monitor for known vulnerabilities in Node.js npm, R
 1. Install the Snyk utility using `npm install -g snyk`.
 2. Once installed you will need to authenticate with your Snyk account: `snyk auth`
 
-For more detail on how to authenticate take a look at the [CLI authentication](https://snyk.io/docs/using-snyk#authentication?utm_campaign=docs&utm_medium=github&utm_source=CLI_authentication) section of the Snyk documentation. 
+For more detail on how to authenticate take a look at the [CLI authentication](https://snyk.io/docs/using-snyk#authentication?utm_campaign=docs&utm_medium=github&utm_source=CLI_authentication) section of the Snyk documentation.
 
 ## CLI
 
@@ -24,21 +29,21 @@ For more detail on how to authenticate take a look at the [CLI authentication](h
 snyk [options] [command] [package]
 ```
 
-Run `snyk --help` to get a quick overview of all commands or for full details on the CLI read the snyk.io [CLI docs](https://snyk.io/docs/using-snyk?utm_campaign=docs&utm_medium=github&utm_source=cli). 
+Run `snyk --help` to get a quick overview of all commands or for full details on the CLI read the snyk.io [CLI docs](https://snyk.io/docs/using-snyk?utm_campaign=docs&utm_medium=github&utm_source=cli).
 
 The package argument is optional. If no package is given, Snyk will run the command against the current working directory allowing you test you non-public applications.
 
 
 ## Features
 - **Find** known vulnerabilities by running `snyk test` on a project either as a one off or as part of your CI process.
-- **Fix** vulnerabilities using `snyk wizard` and `snyk protect`. 
-	- `snyk wizard` walks you through finding and fixing know vulnerabilities in your project. Remidiation options include configuring your policy file to update, auto patch and ignore vulnerabilities. (npm only) 
+- **Fix** vulnerabilities using `snyk wizard` and `snyk protect`.
+	- `snyk wizard` walks you through finding and fixing know vulnerabilities in your project. Remidiation options include configuring your policy file to update, auto patch and ignore vulnerabilities. (npm only)
 	- `snyk protect` your code from vulnerabilities by applying patches and optionally suppressing specific vulnerabilities.
 - **Alert** `snyk monitor` records the state of dependencies and any vulnerabilities on snyk.io so you can be alerted when new vulnerabilities or updates/patches are disclosed that affect your repositories.
 - **Prevent** new vulnerable dependencies from being added to your project by running `snyk test` as part of your CI to fail tests when vulnerable Node.js or Ruby dependencies are added.
 
 
-## Build
+# Build
 
 If using this package from the repo directly, you'll need to first build the custom lodash by running:
 ```
